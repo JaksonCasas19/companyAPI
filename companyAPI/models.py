@@ -7,3 +7,6 @@ class Company(models.Model):
     phone = models.CharField(max_length=10)
     email = models.CharField(max_length=30)
     website = models.CharField(max_length=80)
+
+    def __str__(self):
+        return self.name
